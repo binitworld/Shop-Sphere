@@ -1,174 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopsphere - Your Online Clothing Store</title>
-    <style>
-        /* Reset some default styles */
-        body, h1, h2, h3, p, ul, li {
-            margin: 0;
-            padding: 0;
-        }
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
-        /* Apply a background color and set font styles */
-        body {
-            background-color: #f4f4f4;
-            font-family: 'Arial', sans-serif;
-        }
+/* Apply a background color and set font styles */
+body {
+    background-color: #f8f8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
 
-        /* Style the header */
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+/* Style the header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
 
-        #logo img {
-            width: 50px; /* Adjust the size as needed */
-            height: auto;
-            margin-right: 10px;
-        }
+#logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
 
-        nav ul {
-            list-style: none;
-        }
+h1 {
+    font-size: 36px;
+    margin-top: 10px;
+}
 
-        nav li {
-            display: inline;
-            margin-right: 15px;
-        }
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 30px;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-        }
+nav ul {
+    list-style: none;
+}
 
-        /* Style the products section */
-        #products {
-            padding: 20px;
-        }
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
 
-        .product {
-            background-color: #fff;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
-        .product img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
+nav a:hover {
+    color: #ffcc00;
+}
 
-        .product h3 {
-            margin-top: 10px;
-        }
+/* Style the products section */
+#products {
+    padding: 30px;
+}
 
-        .product p {
-            color: #666;
-        }
+.product {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 
-        .product button {
-            background-color: #333;
-            color: #fff;
-            padding: 8px 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+.product:hover {
+    transform: translateY(-5px);
+}
 
-        .product button:hover {
-            background-color: #555;
-        }
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        /* Style the orders and watchlist sections */
-        #orders, #watchlist {
-            padding: 20px;
-            background-color: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+.product h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
 
-        #orders ul, #watchlist #products {
-            list-style: none;
-        }
+.product p {
+    color: #666;
+    font-size: 16px;
+}
 
-        #orders li, #watchlist .product {
-            margin-bottom: 10px;
-        }
+.product button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
 
-        /* Style the categories section */
-        #categories {
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        }
+.product button:hover {
+    background-color: #e5b800;
+}
 
-        #categories ul {
-            list-style: none;
-        }
+/* Style the orders and watchlist sections */
+#orders, #watchlist {
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
 
-        #categories li {
-            margin-bottom: 10px;
-        }
+#orders ul, #watchlist #products {
+    list-style: none;
+}
 
-        #categories a {
-            color: #fff;
-            text-decoration: none;
-        }
+#orders li, #watchlist .product {
+    margin-bottom: 15px;
+}
 
-        #categories a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
+/* Style the categories section */
+#categories {
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
 
-    <header>
-        <div id="logo">
-            <img src="logo.png" alt="Shopsphere Logo">
-            <h1>Welcome to Shopsphere</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Orders</a></li>
-                <li><a href="#">Watchlist</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Bag</a></li>
-            </ul>
-        </nav>
-    </header>
+#categories ul {
+    list-style: none;
+}
 
-    <section id="products">
-        <h2>Featured Products</h2>
-        <!-- ... (rest of your product section) ... -->
-    </section>
+#categories li {
+    margin-bottom: 15px;
+}
 
-    <section id="orders">
-        <h2>Your Orders</h2>
-        <!-- ... (rest of your orders section) ... -->
-    </section>
+#categories a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
 
-    <section id="watchlist">
-        <h2>Your Watchlist</h2>
-        <!-- ... (rest of your watchlist section) ... -->
-    </section>
+#categories a:hover {
+    color: #ffcc00;
+}
 
-    <section id="categories">
-        <h2>Shop by Category</h2>
-        <!-- ... (rest of your categories section) ... -->
-    </section>
-
-</body>
-</html>
