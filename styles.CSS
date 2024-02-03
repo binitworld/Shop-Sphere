@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopsphere - Your Online Clothing Store</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply a background color and set font styles */
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #logo img {
+            width: 50px; /* Adjust the size as needed */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Style the products section */
+        #products {
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+        }
+
+        .product p {
+            color: #666;
+        }
+
+        .product button {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .product button:hover {
+            background-color: #555;
+        }
+
+        /* Style the orders and watchlist sections */
+        #orders, #watchlist {
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #orders ul, #watchlist #products {
+            list-style: none;
+        }
+
+        #orders li, #watchlist .product {
+            margin-bottom: 10px;
+        }
+
+        /* Style the categories section */
+        #categories {
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        #categories ul {
+            list-style: none;
+        }
+
+        #categories li {
+            margin-bottom: 10px;
+        }
+
+        #categories a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #categories a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="Shopsphere Logo">
+            <h1>Welcome to Shopsphere</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Watchlist</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Bag</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+        <!-- ... (rest of your product section) ... -->
+    </section>
+
+    <section id="orders">
+        <h2>Your Orders</h2>
+        <!-- ... (rest of your orders section) ... -->
+    </section>
+
+    <section id="watchlist">
+        <h2>Your Watchlist</h2>
+        <!-- ... (rest of your watchlist section) ... -->
+    </section>
+
+    <section id="categories">
+        <h2>Shop by Category</h2>
+        <!-- ... (rest of your categories section) ... -->
+    </section>
+
+</body>
+</html>
