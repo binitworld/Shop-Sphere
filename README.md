@@ -1,2 +1,2 @@
-# Shopshere
-Applied DevOps 
+# ShopSphere
+
