@@ -14,7 +14,7 @@ function removeFromWatchlist(productName) {
 document.querySelectorAll('.product').forEach(function (product) {
     var productName = product.querySelector('h3').innerText;
     var productPrice = product.querySelector('p:last-of-type').innerText;
-
+    var productdescriptions =  productqurey.querySelectorAll(product)
     product.querySelector('button:nth-of-type(1)').addEventListener('click', function () {
         addToCart(productName, productPrice);
     });
@@ -30,3 +30,4 @@ document.querySelectorAll('.product').forEach(function (product) {
         });
     }
 });
+
