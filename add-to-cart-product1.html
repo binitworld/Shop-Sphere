@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopSphere - Your Shopping Bag</title>
+    <title>Add to Cart - Product 1</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,20 +27,13 @@
         </nav>
     </header>
 
-    <section id="bag">
-        <h2>Your Shopping Bag</h2>
-
-        <!-- Include items added to the bag here -->
-        <div class="product">
-            <img src="product5.jpg" alt="Product 5">
-            <h3>Product 5</h3>
-            <p>Description of Product 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>₹ 799 </p>
-            <button class="remove-from-bag">Remove from Bag</button>
-        </div>
-
-        <!-- Add more items as needed -->
-
+    <section id="add-to-cart">
+        <h2>Add to Cart - Product 1</h2>
+        <p>Product Name: Blazer for Men</p>
+        <p>Price: ₹11000</p>
+        <p>Quantity: <input type="number" value="1" min="1"></p>
+        <button>Add to Cart</button>
+        <button><a href="remove-from-cart.html?product=Product_Name&price=Product_Price">Remove from Cart</a></button>
     </section>
 
     <!-- Add footer section if necessary -->
@@ -51,3 +44,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
