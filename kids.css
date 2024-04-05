@@ -1,12 +1,16 @@
 /* Fonts */
+
+
+
+/* Fonts */
 body {
-    background-image: url('Images/pinkbg.jpg');
+    background-image: url('Images/kidsbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0;
+    padding: 0;
 }
-
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica', sans-serif;
@@ -15,20 +19,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Colors */
 :root {
-    --primary-color: #ff6b81; /* Coral Pink */
-    --secondary-color: #fec5bb; /* Blush */
-    --accent-color: #ff85a2; /* Light Pink */
+    --primary-color: #ff8c00; /* Dark Orange */
+    --secondary-color: #ffd700; /* Gold */
+    --accent-color: #ff6347; /* Tomato */
     --text-color: #333; /* Dark Gray */
 }
 
 body {
     color: var(--text-color);
-    background-color: #fff; /* White background */
 }
 
 /* Header */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Orange */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -68,22 +71,22 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); /* Gold */
 }
 
-/* Women's Collection Section */
-#women {
+/* Kids' Collection Section */
+#kids {
     padding: 20px;
     text-align: center;
 }
 
-#women h2 {
-    color: var(--accent-color);
+#kids h2 {
+    color: var(--accent-color); /* Tomato */
 }
 
 /* Product Cards */
 .product {
-    background-color: #fff;
+    background-color: var(--secondary-color); /* Gold */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -100,15 +103,15 @@ nav ul li a:hover {
 .product h3 {
     margin-top: 10px;
     font-size: 1.2em;
-    color: var(--primary-color);
+    color: var(--accent-color); /* Tomato */
 }
 
 .product p {
-    color: var(--text-color);
+    color: var(--text-color); /* Dark Gray */
 }
 
 .product button {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color); /* Tomato */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -119,9 +122,8 @@ nav ul li a:hover {
 }
 
 .product button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color); /* Dark Orange */
 }
-
 /* Feedback Section */
 #feedback {
     background-color: var(--primary-color); /* Orange */

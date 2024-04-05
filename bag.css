@@ -1,12 +1,10 @@
 /* Fonts */
 body {
-    background-image: url('Images/pinkbg.jpg');
+    background-image: url('Images/bags.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica', sans-serif;
@@ -15,9 +13,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Colors */
 :root {
-    --primary-color: #ff6b81; /* Coral Pink */
-    --secondary-color: #fec5bb; /* Blush */
-    --accent-color: #ff85a2; /* Light Pink */
+    --primary-color: #485461; /* Dark Slate Blue */
+    --secondary-color: #f6e58d; /* Maize */
+    --accent-color: #f9ca24; /* Sunflower */
     --text-color: #333; /* Dark Gray */
 }
 
@@ -71,13 +69,13 @@ nav ul li a:hover {
     background-color: var(--secondary-color);
 }
 
-/* Women's Collection Section */
-#women {
+/* Bags Collection Section */
+#bags {
     padding: 20px;
     text-align: center;
 }
 
-#women h2 {
+#bags h2 {
     color: var(--accent-color);
 }
 
@@ -122,6 +120,13 @@ nav ul li a:hover {
     background-color: var(--secondary-color);
 }
 
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 /* Feedback Section */
 #feedback {
     background-color: var(--primary-color); /* Orange */
