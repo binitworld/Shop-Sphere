@@ -11,56 +11,38 @@ body {
     color: #333;
 }
 
-
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
+    background-color: #f6956c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logo img {
-    width: 80px;
-    height: auto;
-    margin-right: 10px;
-    
+    height: 80px;
+    width: 90px;
 }
-
-h1 {
-    font-size: 36px;
-    margin-top: 10px;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: normal;
-    color: #555;
-    margin-bottom: 30px;
-}
-
+/* header file size */
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
-nav li {
+/* header writiings */
+nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 20px;
 }
-
-nav a {
+/* headers writings colour */
+nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    color: #000501;
 }
-
-nav a:hover {
-    color: #ffcc00;
-    box-shadow:  0 0 15px 5px #f6f61e;
+/* content padding */
+section#male {
+    padding: 20px;
 }
-
-
 #products {
     padding: 30px;
 }
@@ -162,5 +144,67 @@ nav a:hover {
 img{
     height: 200px;
     width: 200px;
+}
+
+#feedback {
+    background-color: #000405; /* New background color */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* Remaining CSS styles remain unchanged */
+#feedback h2 {
+    color: #fcfafa;
+    margin-bottom: 20px;
+}
+
+#feedback form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#feedback form div {
+    margin-bottom: 15px;
+}
+
+#feedback form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f8f7f7;
+}
+
+#feedback form input[type="text"],
+#feedback form input[type="email"],
+#feedback form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0f0000;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+#feedback form textarea {
+    height: 100px;
+}
+
+#feedback form button[type="submit"] {
+    background-color: #007bff;
+    color: #080000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#feedback form button[type="submit"]:hover {
+    background-color: #18cb2a;
+}
+
+/* curser upon button */
+button:hover {
+    background-color: #82e508;
 }
 /*base*/

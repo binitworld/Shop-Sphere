@@ -1,5 +1,4 @@
 /* Global styles */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #f9f7f7;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -16,38 +15,50 @@ header {
 }
 
 #logo img {
-    height: 50px;
+    height: 80px;
+    width: 80px;
 }
-/* header file size */
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-/* header writiings */
+
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
-/* headers writings colour */
+
 nav ul li a {
     text-decoration: none;
     color: #000501;
 }
-/* content padding */
+
 section#male {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px;
 }
-/* spce between the images */
+
 .product {
+    flex: 0 0 calc(33.33% - 20px); /* Adjusted width to fit three products in a row */
     margin-bottom: 30px;
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    max-width: 80%;
+    height: 300px;
+    border: 2px solid #ccc; /* Frame around the product images */
+    border-radius: 10px; /* Rounded corners for the frame */
+    padding: 10px; /* Added padding inside the frame */
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+}
+
+.product img:hover {
+    border-color: #ff0000; /* Change border color on hover */
 }
 
 .product h3 {
@@ -77,14 +88,14 @@ button {
 }
 
 #feedback {
-    background-color: #f9f9f9;
+    background-color: #000405; /* New background color */
     padding: 20px;
     margin-top: 30px;
     border-radius: 5px;
 }
 
 #feedback h2 {
-    color: #333;
+    color: #fcfafa;
     margin-bottom: 20px;
 }
 
@@ -100,7 +111,7 @@ button {
 #feedback form label {
     display: block;
     margin-bottom: 5px;
-    color: #666;
+    color: #f8f7f7;
 }
 
 #feedback form input[type="text"],
@@ -108,7 +119,7 @@ button {
 #feedback form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #0f0000;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -119,7 +130,7 @@ button {
 
 #feedback form button[type="submit"] {
     background-color: #007bff;
-    color: #fff;
+    color: #080000;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -131,8 +142,6 @@ button {
     background-color: #18cb2a;
 }
 
-/* curser upon button */
 button:hover {
     background-color: #82e508;
 }
-
