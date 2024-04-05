@@ -75,6 +75,62 @@ button {
     margin-top: 10px;
     transition: background-color 0.3s ease;
 }
+
+#feedback {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+#feedback h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#feedback form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#feedback form div {
+    margin-bottom: 15px;
+}
+
+#feedback form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+#feedback form input[type="text"],
+#feedback form input[type="email"],
+#feedback form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#feedback form textarea {
+    height: 100px;
+}
+
+#feedback form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#feedback form button[type="submit"]:hover {
+    background-color: #18cb2a;
+}
+
 /* curser upon button */
 button:hover {
     background-color: #82e508;
