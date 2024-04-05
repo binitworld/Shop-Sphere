@@ -182,6 +182,26 @@
 
     </section>
 
+    
+    <section id="feedback">
+    <h2>Give Us Your Feedback</h2>
+    <form id="feedbackForm" action="submit-feedback.php" method="POST">
+        <div>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    </section>
+
     <!-- Add footer section if necessary -->
     <!-- <footer>
         <p>&copy; 2024 Shopsphere. All rights reserved.</p>
