@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Your Orders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="Assets\logo.png" alt="Shopsphere Logo">
+            <h1>Welcome to ShopSphere</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/orders">Orders</a></li>
+                <li><a href="/watchlist">Watchlist</a></li>
+                <li><a href="/categories">Categories</a></li>
+                <li><a href="/bag">Bag</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="orders">
+        <h2>Your Orders</h2>
+        <!-- Example of clickable order links -->
+        <ul>
+            <li><a href="order-details.html">Order #1234</a></li>
+            <li><a href="order-details.html">Order #5678</a></li>
+            <!-- Add more order links as needed -->
+        </ul>
+    </section>
+
+    
+    <section id="feedback">
+    <h2>Give Us Your Feedback</h2>
+    <form id="feedbackForm" action="submit-feedback.php" method="POST">
+        <div>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    </section>
+
+    <!-- Add footer section if necessary -->
+    <!-- <footer>
+        <p>&copy; 2024 Shopsphere. All rights reserved.</p>
+    </footer> -->
+
+    <script src="./js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+pipeline:
+  agent:
+    any
+
+  stages:
+    - stage: Build
+      steps:
+        - script:
+            name: "Clone Repository"
+            git 'https://github.com/binitworld/Shop-Sphere'
+        - script:
+            name: "Build HTML, CSS, JavaScript"
+            sh 'npm install' 
+            sh 'npm run build' 
+
+    - stage: Test
+      steps:
+        - script:
+            name: "Run Tests"
+            # Add commands to run your tests here
+            bpm test
+
+    - stage: Deploy
+      steps:
+        - script:
+            name: "Deploy to Server"
+            
+            
+
+  post:
+    always:
+      - script:
+          name: "Cleanup"
+          sh 'npm clean'

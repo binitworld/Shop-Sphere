@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Your Watchlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="Assets\logo.png" alt="Shopsphere Logo">
+            <h1>Welcome to ShopSphere</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/orders">Orders</a></li>
+                <li><a href="/watchlist">Watchlist</a></li>
+                <li><a href="/categories">Categories</a></li>
+                <li><a href="/bag">Bag</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="watchlist">
+        <h2>Your Watchlist</h2>
+
+        <!-- Include items added to the watchlist here -->
+        <div class="product">
+            <img src="product6.jpg" alt="Product 6">
+            <h3>Product 6</h3>
+            <p>Description of Product 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>₹ 899 </p>
+            <button>Remove from Watchlist</button>
+        </div>
+
+        <!-- Add more items as needed -->
+
+    </section>
+
+    
+    <section id="feedback">
+    <h2>Give Us Your Feedback</h2>
+    <form id="feedbackForm" action="submit-feedback.php" method="POST">
+        <div>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    </section>
+
+    <!-- Add footer section if necessary -->
+    <!-- <footer>
+        <p>&copy; 2024 Shopsphere. All rights reserved.</p>
+    </footer> -->
+
+    <script src="js/Watchlist.js"></script>
+</body>
+</html>
