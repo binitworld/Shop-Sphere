@@ -144,7 +144,7 @@
     
     <section id="feedback">
     <h2>Give Us Your Feedback</h2>
-    <form id="feedbackForm" action="submit-feedback.php" method="POST">
+    <form id="feedbackForm" action="#" method="POST">
         <div>
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
@@ -168,6 +168,70 @@
     </footer> -->
 
 
-    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mongodb/4.4.0/mongodb.min.js">
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+
+                console.log("i ma here");
+
+                event.preventDefault(); // Prevent the default form submission
+        
+                // Retrieve form data
+                const formData = new FormData(this);
+        
+                // Construct the object to be sent to MongoDB
+                const feedbackData = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    message: formData.get('message')
+                };
+        
+                // Perform MongoDB connection here
+                connectToMongoDB(feedbackData);
+            });
+        
+            function connectToMongoDB(feedbackData) {
+                // Your MongoDB connection code goes here
+
+                const MongoClient = mongodb.MongoClient;
+
+                // Replace <username>, <password>, <cluster>, and <dbname> with your MongoDB Atlas credentials and database name
+                const uri = 'mongodb+srv://contactbinitbhushan:CzNGPpIg7AQpMIhP@cluster0.hy7vvyw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+        
+                // Create a new MongoClient
+                const client = new MongoClient(uri);
+        
+                async function submitFeedback() {
+                    try {
+                        // Connect to the MongoDB server
+                        await client.connect();
+        
+                        console.log('Connected to MongoDB Atlas');
+        
+                        // Select a specific database and collection
+                        const db = client.db('shopsphare');
+                        const collection = db.collection('feedback');
+        
+                        // Insert feedback data into the collection
+                        await collection.insertOne(feedbackData);
+        
+                        console.log('Feedback submitted successfully');
+                    } catch (error) {
+                        console.error('Error submitting feedback:', error);
+                    } finally {
+                        // Close the connection when done
+                        await client.close();
+                        console.log('Disconnected from MongoDB Atlas');
+                    }
+                }
+        
+                // Call the function to submit feedback
+                submitFeedback();
+            }
+        });
+        </script>
+
+    
 </body>
 </html>

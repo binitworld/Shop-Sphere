@@ -80,6 +80,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add event listeners for submitting feedback form
     const feedbackForm = document.getElementById("feedbackForm");
     feedbackForm.addEventListener("submit", function(event) {
+
+        console.log("done");
+
         event.preventDefault();
         const formData = new FormData(this);
         const feedbackData = Object.fromEntries(formData.entries());
