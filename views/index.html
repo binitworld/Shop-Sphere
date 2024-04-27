@@ -17,130 +17,19 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/products">Products</a></li>
                 <li><a href="/orders">Orders</a></li>
-                <li><a href="/watchlist">Watchlist</a></li>
+                <li><a href="/cart">Cart</a></li>
                 <li><a href="/categories">Categories</a></li>
-                <li><a href="/bag">Bag</a></li>
+                <!-- <li><a href="/bag">Bag</a></li> -->
                 <!-- Add more navigation links as needed -->
             </ul>
         </nav>
     </header>
     
-
     <section id="products">
         <h2>Featured Products</h2>
-
-        <div class="product">
-            <img src="Assets/product1.png" alt="Product 1">
-            <h3>Blazer for Men</h3>
-            <p>Elevate your style with our premium blazer. Crafted with precision and attention to detail, this sophisticated piece exudes elegance and refinement. Perfect for both formal occasions and casual outings, its versatile design ensures you make a statement wherever you go. Upgrade your wardrobe with this timeless essential today</p>
-            <div style="margin-top: 10px;">
-                <p><strong>₹ 11000</strong></p>
-            </div>
-            <button><a href="add-to-cart.html">Add to Cart</a></button>
-
-            <button><a href="add-to-watchlist.html?product=Product_Name&price=Product_Price">Add to Watchlist</a></button>
-        </div>
-        
-
-        <div class="product">
-        <img src="./Images/women-cloth.jpeg" alt="Product 2">
-            <h3>Women TraditionalTrends</h3>
-            <p>TraditionalTrends is where you find beautiful clothes from different cultures. We pick out special outfits that show the history and style of different places. From colorful saris to elegant kimonos, each piece tells a story. Whether you want to honor your heritage or try something new, our collection lets you explore the world's fashion traditions with a modern twist. Come discover the beauty of timeless fashion at TraditionalTrends.</p>
-            <p>₹ 599 </p>
-            <button><a href="add-to-cart">Add to Cart</a></button>
-            <button><a href="add-to-watchlist.html?product=Product_Name&price=Product_Price">Add to Watchlist</a></button>
-        </div>
-
-        <div class="product">
-            <img src="./Images/kids.png" alt="Product 3">
-            <h3>LittleLuxe Outfit</h3>
-            <p>
-                "LittleLuxe Outfit is the perfect choice for your little one's stylish adventures. This outfit combines comfort and sophistication, making it ideal for any occasion. With soft fabrics and trendy designs, your child will feel both fashionable and cozy. Whether it's a playdate or a family outing, the LittleLuxe Outfit ensures that your little one stands out with effortless style."</p>
-            <p>₹ 699 </p>
-            <button><a href="add-to-cart-product3.html">Add to Cart</a></button>
-            <button><a href="add-to-watchlist.html?product=Product_Name&price=Product_Price">Add to Watchlist</a></button>
-        </div>
-
-        <div class="product">
-            <img src="./Images/men_shirt.png" alt="Product 4">
-            <h3>Men's Modish Shirts</h3>
-            <p>
-                "Step up your style game with our Men's Modish Shirts! These shirts are all about combining modern trends with classic elegance. Crafted from high-quality fabrics and tailored for a perfect fit, our shirts ensure you look sharp and sophisticated for any occasion. From sleek solids to stylish patterns, each shirt adds a touch of flair to your wardrobe. Whether you're heading to the office or a night out with friends, our Men's Modish Shirts are your go-to choice for effortless style."</p>
-            <p>₹ 499 </p>
-            <button><a href="add-to-cart-product4.html">Add to Cart</a></button>
-            <button><a href="add-to-watchlist.html?product=Product_Name&price=Product_Price">Add to Watchlist</a></button>
-        </div>
-
-        <!-- Add more product entries as needed -->
-
+        <div id="product-container"></div>
     </section>
-
-    <section id="orders">
-        <h2>Your Orders</h2>
-        <!-- Example of clickable order links -->
-        <ul>
-            <li><a href="order-details.html">Order #1234</a></li>
-            <li><a href="order-details.html">Order #5678</a></li>
-            <!-- Add more order links as needed -->
-        </ul>
-    </section>
-
-
-    <section id="watchlist">
-        <h2>Your Watchlist</h2>
-        <!-- Display user's saved items (watchlist) here -->
-        <section id="products">
-
-        <div class="product">
-            <img src="./Images/women_casual.png" alt="Product 5">
-            <h3>Women's Cotton Comfort Skirts</h3>
-            <p>"Indulge in pure comfort with our Women's Cotton Comfort Skirts! Made from soft, breathable cotton fabric, these skirts are perfect for everyday wear. Whether you're running errands or lounging at home, our skirts offer a cozy and relaxed fit that keeps you feeling comfortable all day long. With a range of colors and styles to choose from, you can easily mix and match to create your perfect casual look. Experience the ultimate blend of comfort and style with our Women's Cotton Comfort Skirts."</p>
-            <p>₹ 452 </p>
-            <button><a href="add-to-cart-product5.html">Add to Cart</a></button>
-            <button><a href="add-to-watchlist.html?product=Product_Name&price=Product_Price">Add to Watchlist</a></button>
-        </div>
-
-        <div class="product">
-            <img src="./Images/kids.jpeg" alt="Product 6">
-            <h3>LittleLuxe Outfit</h3>
-            <p> "LittleLuxe Outfit is the perfect choice for your little one's stylish adventures. This outfit combines comfort and sophistication, making it ideal for any occasion. With soft fabrics and trendy designs, your child will feel both fashionable and cozy. Whether it's a playdate or a family outing, the LittleLuxe Outfit ensures that your little one stands out with effortless style."</p>
-            <p>₹ 699 </p>
-            <button><a href="add-to-cart-product6.html">Add to Cart</a></button>
-            <button><a href="add-to-watchlist.html?product=Product_Name&price=Product_Price">Add to Watchlist</a></button>
-        </div>
-
-        <div class="product">
-            <img src="./Images/mens_partyware.png" alt="Product 7">
-            <h3>Men's-TraditionTrove  Sherwani</h3>
-            <p>"Step into timeless elegance with our Men's TraditionTrove Sherwani! This traditional garment exudes sophistication and cultural charm. Crafted with intricate details and premium fabrics, our Sherwani ensures you stand out on any special occasion. Whether it's a wedding, festival, or celebration, our Sherwani adds a touch of regal flair to your look. With its classic silhouette and exquisite craftsmanship, the Men's TraditionTrove Sherwani is a symbol of tradition and style."</p>
-            <p>₹ 1199 </p>
-            <button><a href="add-to-cart-product7.html">Add to Cart</a></button>
-            <button><a href="add-to-watchlist.html?product=Product_Name&price=Product_Price">Add to Watchlist</a></button>
-        </div>
-
-        <div class="product">
-            <img src="./Images/men_office_wear.png" alt="Product 8">
-            <h3>Mens-Corporate Class</h3>
-            <p>"Introducing Mens-Corporate Class: Elevate your office attire with our sophisticated collection. Tailored for professionalism and style, our garments offer timeless elegance for the modern man. From sharp suits to refined shirts, each piece exudes confidence and class. Whether you're in the boardroom or meeting clients, Mens-Corporate Class ensures you make a lasting impression with impeccable style."</p>
-            <p>₹ 499 </p>
-            <button><a href="add-to-cart-product8.html">Add to Cart</a></button>
-            <button><a href="add-to-watchlist.html?product=Product_Name&price=Product_Price">Add to Watchlist</a></button>
-        </div>
-    </section>
-
-    <section id="categories">
-        <h2>Shop by Category</h2>
-        <!-- Display product categories here -->
-        <ul>
-            <li><a href="male.html">Men</a></li>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="kids.html">Kids</a></li>
-            <!-- Add more categories as needed -->
-        </ul>
-    </section>
-
     
     <section id="feedback">
     <h2>Give Us Your Feedback</h2>
@@ -163,10 +52,35 @@
 
 
     <!-- Add footer section if necessary -->
-    <!-- <footer>
+    <footer>
         <p>&copy; 2024 Shopsphere. All rights reserved.</p>
-    </footer> -->
+    </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          fetch('/products')
+            .then(response => response.json())
+            .then(products => {
+              const productsContainer = document.getElementById('product-container');
+              products.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.classList.add('product');
+                productElement.innerHTML = `
+                  <img src="${product.imageUrl}" alt="${product.name}">
+                  <h3>${product.name}</h3>    
+                  <p>${product.description}</p>
+                  <div style="margin-top: 10px;">
+                    <p><strong>₹ ${product.price}</strong></p>
+                  </div>
+                  <button><a href="/add-to-cart?product=${product.name}&price=${product.price}">Add to Cart</a></button>
+                  <button><a href="/buy?product=${product.name}&price=${product.price}">Buy Now</a></button>
+                `;
+                productsContainer.appendChild(productElement);
+              });
+            })
+            .catch(error => console.error('Error fetching products:', error));
+        });
+      </script>
     
 </body>
 </html>
